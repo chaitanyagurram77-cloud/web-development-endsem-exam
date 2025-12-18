@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #00e5ff;
+}
+
+header p {
+  margin-top: 8px;
+  color: #bdbdbd;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Project Card */
+.project {
+  background: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.25);
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Text */
+.project h3 {
+  padding: 15px 15px 5px;
+  color: #ffffff;
+}
+
+.project p {
+  padding: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+/* Button */
+button {
+  margin: 0 15px 20px;
+  width: calc(100% - 30px);
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #00e5ff;
+  color: #121212;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
